@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --partition=omicsbio
+#SBATCH --ntasks=20
+#SBATCH --time=60:00:00
+#SBATCH --job-name=plink
+#SBATCH --mem=150G
+#SBATCH --chdir=/work/biobank/ukb_data/new_data/
+#SBATCH --output=plink_%J_stdout.txt
+#SBATCH --error=plink_%J_stderr.txt
+#SBATCH --mail-user=adrien.f.badre-1@ou.edu
+#SBATCH --mail-type=ALL
+
+module load PLINK
+plink --bfile ukb_cal_chr1_v2 --merge-list ../scripts/merge.txt --make-bed --allow-extra-chr  --out all
+
