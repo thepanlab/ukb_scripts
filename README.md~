@@ -5,4 +5,4 @@ Run:
 $chmod u+rwx *
 $./get_data.sh
 
-Make sure the ukb key file (.key) name is updated to your project key file name in download_bed_fam_bim.sh .
+Make sure the ukb key file (.key) name is updated to your project.
