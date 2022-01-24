@@ -24,7 +24,7 @@
    "outputs": [],
    "source": [
     "##Non_cancer\n",
-    "non_cancer=pd.read_csv('path/to/UKB_coding_mapping_table.tsv',sep=\"\\t\")#.to_csv(\"/work/biobank/ukb_data/good.tsv\",sep=\"\\t\",index=False)"
+    "non_cancer=pd.read_csv('/work/biobank/ukb_data/UKB_coding_mapping_table.tsv',sep=\"\\t\")#.to_csv(\"/work/biobank/ukb_data/good.tsv\",sep=\"\\t\",index=False)"
    ]
   },
   {
@@ -36,7 +36,7 @@
    "outputs": [],
    "source": [
     "##cancer\n",
-    "cancer=pd.read_csv('/path/to/self_report_ICD10_mapping_treeRespect.tsv',sep=\"\\t\")"
+    "cancer=pd.read_csv('/work/biobank/ukb_data/self_report_ICD10_mapping_treeRespect.tsv',sep=\"\\t\")"
    ]
   },
   {
@@ -48,7 +48,7 @@
    "outputs": [],
    "source": [
     "##Medications\n",
-    "medication_codes=pd.read_csv(\"/path/to/medication_coding.tsv\",sep=\"\\t\")"
+    "medication_codes=pd.read_csv(\"/work/biobank/ukb_data/medication_coding.tsv\",sep=\"\\t\")"
    ]
   },
   {
